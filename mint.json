@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "hyerdev",
   "logo": {
-    "dark":"/logo/hyerdev-logo.svg",
-    "light":"/logo/hyerdev-logo.svg"
+    "dark": "/logo/hyerdev-logo.svg",
+    "light": "/logo/hyerdev-logo.svg"
   },
   "favicon": "/faviconV2.png",
   "colors": {
@@ -50,8 +50,8 @@
   ],
   "navigation": [
     {
-      "group": "Início",
-      "pages": ["introduction", "canais" ,"sacflow"]
+      "group": "Vamos começar",
+      "pages": ["introduction", "canais", "sacflow"]
     },
     {
       "group": "API Documentation",
