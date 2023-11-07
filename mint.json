@@ -11,8 +11,8 @@
     "light": "#f1f3f5",
     "dark": "#212529",
     "anchors": {
-      "from": "#f1f3f5",
-      "to": "#f1f3f5"
+      "from": "#212529",
+      "to": "#212529"
     }
   },
   "topbarLinks": [
@@ -51,8 +51,13 @@
   "navigation": [
     {
       "group": "Vamos começar",
-      "pages": ["introduction", "canais", "sacflow"]
+      "pages": ["introduction", "duvidas", "canais"]
     },
+    {
+      "group": "Como usar",
+      "pages": ["para-equipe", "para-supervisores"]
+    },
+
     {
       "group": "API Documentation",
       "pages": ["api-reference/introduction"]

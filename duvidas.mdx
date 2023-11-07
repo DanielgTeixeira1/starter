@@ -1,0 +1,72 @@
+---
+title: "Dúvidas frequentes"
+---
+
+<Note>
+  Nota Importante para Usuários do SACFlow: Para obter suporte, entre em contato
+  conosco em caso de problemas críticos, dúvidas complexas ou solicitações de
+  recursos. Para perguntas gerais ou configurações padrão, consulte nossa
+  documentação
+</Note>
+
+<AccordionGroup>
+
+<Accordion icon="question" title="O que é a janela de 24 horas do WhatsApp e como se aplica">
+
+A janela de 24 horas do WhatsApp é um tempo limite de conversação entre
+a empresa e seu cliente final, ou seja, o tempo em que o atendimento pode ficar em
+aberto sem expiração.
+
+Foi desenvolvida com o objetivo de incentivar as empresas a manter interação com os clientes finais e também restringir estes contatos sob uma padronização, para que as empresas não enviem mensagens que infrinjam as políticas de uso do WhatsApp para seus clientes, como conteúdos indesejados e spans.
+
+<Note>
+  A janela de 24h é iniciada à partir da primeira mensagem seja encaminhada pela
+  empresa ou pelo cliente final
+</Note>
+
+Caso a demanda em si tratada na conversação não seja concluída dentro de 24 horas, podemos ter dois cenários:
+
+- A empresa inicia um novo contato através do atendimento em aberto;
+
+- O cliente retorna o contato através do atendimento em aberto;
+
+No primeiro cenário, caso a empresa tente um novo contato após o período de 24 horas de interação, esta tela será exibida:
+
+<img src="/images/Aguardando.png" alt="Hero Light" />
+
+<Note>
+  O atendimento só poderá seguir se a empresa utilizar um template de mensagem
+  submetido e aprovado pelo WhatsApp, saiba como submeter um novo template
+</Note>
+
+Isso pode ser feito através do ícone de Templates de mensagem no campo de chat ou através da abertura de um novo atendimento. Após o envio, basta aguardar o retorno do cliente. Vale ressaltar que após a última atualização da regra de negócio do WhatsApp essa janela de comunicação **não se renova** a cada nova mensagem do cliente. Sendo assim, a partir do início de uma sessão, que pode ser o envio de um template pela empresa ou a resposta de uma interação realizada pelo cliente, são permitidas + 24 horas de interação.
+
+No segundo cenário, caso já tenha se passado o período determinado e o cliente entrar em contato, será iniciada uma nova sessão de 24 horas a partir da primeira resposta da empresa referente a mensagem enviada pelo cliente.
+
+Não há limitação de sessões/janelas de 24 horas por atendimento, conforme as sessões/janelas expirarem novas sessões serão abertas seguindo a regra de precificação abaixo.
+
+</Accordion>
+<Accordion icon="question" title="É possível fazer o downgrade de um número WhatsApp Business API após ser ativado?">
+
+- Segundo as regras do Facebook, após um número de telefone ser registrado no WhatsApp Business API, ele não poderá mais ser usado pelo aplicativo WhatsApp Business e nem pelo WhatsApp normal (WEB). É possível fazer o upgrade de um número de telefone para a API do WhatsApp Business, mas não o downgrade.
+
+</Accordion>
+<Accordion icon="question" title="É possível migrar meu número para outro BSP (Broker)?">
+- Sim, é possível realizar a migração de BSP
+</Accordion>
+
+<Accordion
+  icon="question"
+  title="Vou perder minhas conversas do WhatsApp após migrar para o WhatsApp Business API?"
+>
+  - Sim, os chats existentes (histórico), não podem ser importados, pelo fato de
+  que o Facebook não desenvolveu o recurso de backup para as conversas do
+  WhatsApp Business API.
+</Accordion>
+
+<Accordion icon="question" title="Existe limite para o envio de arquivos?">
+  - Sim, o limite é de até 16 MB tanto para envio quanto para recebimento de
+  qualquer tipo de arquivo
+</Accordion>
+
+</AccordionGroup>
