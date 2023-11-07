@@ -1,37 +1,60 @@
 ---
-title: Introduction
-description: 'Welcome to the home of your new documentation'
+title: Introdução
+description: 'Bem-vindo à base de documentação da Hyerdev'
 ---
+## O que é o Sacflow?
+
+Sacflow é uma plataforma de atendimento que proporciona funcionalidades importantes para o SAC de empresas que tem o WhatsApp como principal meio de comunicação com os clientes. Entre essas funcionalidades estão atendimento multi-canais, multi-departamentos e multi-atendentes; Fluxos de atendimento com chatbots; Gerenciamento de clientes e contatos; Visão geral por meio de relatórios e dados em tempo real;
+
+## O que é a janela de 24 horas do WhatsApp e como se aplica
+
+A janela de 24 horas do WhatsApp é um tempo limite de conversação entre a empresa e seu cliente final, ou seja, o tempo em que o atendimento pode ficar em aberto sem expiração.
+
+Foi desenvolvida com o objetivo de incentivar as empresas a manter interação com os clientes finais e também restringir estes contatos sob uma padronização, para que as empresas não enviem mensagens que infrinjam as políticas de uso do WhatsApp para seus clientes, como conteúdos indesejados e spans.
+
+<Note>A janela de 24h é iniciada à partir da primeira mensagem seja encaminhada pela empresa ou pelo cliente final</Note>
+
+Caso a demanda em si tratada na conversação não seja concluída dentro de 24 horas, podemos ter dois cenários:
+
+- A empresa inicia um novo contato através do atendimento em aberto;
+
+- O cliente retorna o contato através do atendimento em aberto;
+
+No primeiro cenário, caso a empresa tente um novo contato após o período de 24 horas de interação, esta tela será exibida:
 
 <img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
+  src = "/images/Aguardando.png"
   alt="Hero Light"
 />
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
 
-## Setting up
+<Note>O atendimento só poderá seguir se a empresa utilizar um template de mensagem submetido e aprovado pelo WhatsApp, saiba como submeter um novo template</Note>
 
-The first step to world-class documentation is setting up your editing environnments.
+
+Isso pode ser feito através do ícone de Templates de mensagem no campo de chat ou através da abertura de um novo atendimento. Após o envio, basta aguardar o retorno do cliente. Vale ressaltar que após a última atualização da regra de negócio do WhatsApp essa janela de comunicação **não se renova** a cada nova mensagem do cliente. Sendo assim, a partir do início de uma sessão, que pode ser o envio de um template pela empresa ou a resposta de uma interação realizada pelo cliente, são permitidas + 24 horas de interação.
+
+No segundo cenário, caso já tenha se passado o período determinado e o cliente entrar em contato, será iniciada uma nova sessão de 24 horas a partir da primeira resposta da empresa referente a mensagem enviada pelo cliente.
+
+Não há limitação de sessões/janelas de 24 horas por atendimento, conforme as sessões/janelas expirarem novas sessões serão abertas seguindo a regra de precificação abaixo.
+
+
+
+## SACFLOW
+
 
 <CardGroup cols={2}>
   <Card
-    title="Edit Your Docs"
+    title="Base de Documetação"
     icon="pen-to-square"
     href="https://mintlify.com/docs/quickstart"
   >
-    Get your docs set up locally for easy development
+    Nesta guia, você encontrará todas as documentações relacionadas ao Sacflow e suas funcionalidades.
   </Card>
   <Card
-    title="Preview Changes"
+    title="Tutoriais"
     icon="image"
     href="https://mintlify.com/docs/development"
   >
-    Preview your changes before you push to make sure they're perfect
+    Nesta guia, você terá acesso a todos os tutoriais e documentações relacionados ao Sacflow e suas diversas funcionalidades.
   </Card>
 </CardGroup>
 
@@ -69,3 +92,5 @@ Update your docs to your brand and add valuable content for the best user conver
     Check out our showcase of our favorite documentation
   </Card>
 </CardGroup>
+
+

@@ -1,29 +1,29 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "hyerdev",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark":"/logo/hyerdev-logo.svg",
+    "light":"/logo/hyerdev-logo.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/faviconV2.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#8324d2",
+    "light": "#8324d2",
+    "dark": "#8324d2",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#8324d2",
+      "to": "#8324d2"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Suporte ",
+      "url": "https://wa.me/556239323632"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "."
   },
   "tabs": [
     {
@@ -33,29 +33,25 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Documentação",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "."
     },
     {
-      "name": "Community",
+      "name": "Comunidade",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "."
     },
     {
-      "name": "Blog",
+      "name": "Site",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://www.hyerdev.com"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Início",
+      "pages": ["introduction", "canais" ,"sacflow"]
     },
     {
       "group": "API Documentation",
@@ -71,8 +67,8 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "instagram": "https://www.instagram.com/hyerdev/?igshid=MzRlODBiNWFlZA%3D%3D",
+    "linkedin": "https://www.linkedin.com/company/hyerdev/",
+    "website": "https://www.hyerdev.com"
   }
 }
