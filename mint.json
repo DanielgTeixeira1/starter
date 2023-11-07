@@ -2,17 +2,17 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "hyerdev",
   "logo": {
-    "dark": "/logo/hyerdev-logo.svg",
-    "light": "/logo/hyerdev-logo.svg"
+    "dark": "/logo/logo.svg",
+    "light": "/logo/logo.svg"
   },
-  "favicon": "/faviconV2.png",
+  "favicon": "/faviconV1.png",
   "colors": {
-    "primary": "#8324d2",
-    "light": "#8324d2",
-    "dark": "#8324d2",
+    "primary": "#212529",
+    "light": "#f1f3f5",
+    "dark": "#f1f3f5",
     "anchors": {
-      "from": "#8324d2",
-      "to": "#8324d2"
+      "from": "#f1f3f5",
+      "to": "#f1f3f5"
     }
   },
   "topbarLinks": [
