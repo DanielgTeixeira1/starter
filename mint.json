@@ -31,27 +31,14 @@
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentação",
-      "icon": "book-open-cover",
-      "url": "."
-    },
-    {
-      "name": "Comunidade",
-      "icon": "slack",
-      "url": "."
-    },
-    {
-      "name": "Site",
-      "icon": "newspaper",
-      "url": "https://www.hyerdev.com"
-    }
-  ],
   "navigation": [
     {
       "group": "Vamos começar",
-      "pages": ["introduction", "duvidas", "canais"]
+      "pages": [
+        "introduction",
+        "duvidas-frequentes/duvidas",
+        "canais-comunicacao/canais"
+      ]
     },
     {
       "group": "Como usar",
