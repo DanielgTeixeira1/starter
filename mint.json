@@ -42,7 +42,16 @@
     },
     {
       "group": "Como usar",
-      "pages": ["para-equipe", "para-supervisores"]
+      "pages": [
+        {
+          "group": "Para equipe",
+          "pages": [
+            "atendimento/criar_atendimento",
+            "atendimento/iniciar_atendimento",
+            "atendimento/resolver_atendimento"
+          ]
+        }
+      ]
     },
 
     {
