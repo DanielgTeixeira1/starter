@@ -46,13 +46,22 @@
         {
           "group": "Para equipe",
           "pages": [
-            "atendimento/criar_atendimento",
-            "atendimento/iniciar_atendimento",
-            "atendimento/resolver_atendimento",
-            "atendimento/transferir_atendimento",
-            "atendimento/status_atendimento",
-            "atendimento/historico_atendimento",
-            "atendimento/pesquisar_tickets"
+            {
+              "group": "Atendimento",
+              "pages": [
+                "atendimento/criar_atendimento",
+                "atendimento/iniciar_atendimento",
+                "atendimento/resolver_atendimento",
+                "atendimento/transferir_atendimento",
+                "atendimento/status_atendimento",
+                "atendimento/historico_atendimento",
+                "atendimento/pesquisar_tickets"
+              ]
+            },
+            {
+              "group": "Gerenciamento",
+              "pages": ["gerenciamento/salvar_contato"]
+            }
           ]
         }
       ]
