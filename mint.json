@@ -48,7 +48,11 @@
           "pages": [
             "atendimento/criar_atendimento",
             "atendimento/iniciar_atendimento",
-            "atendimento/resolver_atendimento"
+            "atendimento/resolver_atendimento",
+            "atendimento/transferir_atendimento",
+            "atendimento/status_atendimento",
+            "atendimento/pesquisar_tickets",
+            "atendimento/historico_atendimento"
           ]
         }
       ]
