@@ -51,8 +51,8 @@
             "atendimento/resolver_atendimento",
             "atendimento/transferir_atendimento",
             "atendimento/status_atendimento",
-            "atendimento/pesquisar_tickets",
-            "atendimento/historico_atendimento"
+            "atendimento/historico_atendimento",
+            "atendimento/pesquisar_tickets"
           ]
         }
       ]
