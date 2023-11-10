@@ -60,7 +60,12 @@
             },
             {
               "group": "Gerenciamento",
-              "pages": ["gerenciamento/salvar_contato"]
+              "pages": [
+                "gerenciamento/salvar_contato",
+                "gerenciamento/criar_contato",
+                "gerenciamento/criar_etiqueta",
+                "gerenciamento/criar_resposta_rapida"
+              ]
             }
           ]
         }
