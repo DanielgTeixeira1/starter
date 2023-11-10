@@ -49,22 +49,47 @@
             {
               "group": "Atendimento",
               "pages": [
-                "atendimento/criar_atendimento",
-                "atendimento/iniciar_atendimento",
-                "atendimento/resolver_atendimento",
-                "atendimento/transferir_atendimento",
-                "atendimento/status_atendimento",
-                "atendimento/historico_atendimento",
-                "atendimento/pesquisar_tickets"
+                "equipe/atendimento/criar_atendimento",
+                "equipe/atendimento/iniciar_atendimento",
+                "equipe/atendimento/resolver_atendimento",
+                "equipe/atendimento/transferir_atendimento",
+                "equipe/atendimento/status_atendimento",
+                "equipe/atendimento/historico_atendimento",
+                "equipe/atendimento/pesquisar_tickets"
               ]
             },
             {
               "group": "Gerenciamento",
               "pages": [
-                "gerenciamento/salvar_contato",
-                "gerenciamento/criar_contato",
-                "gerenciamento/criar_etiqueta",
-                "gerenciamento/criar_resposta_rapida"
+                "equipe/gerenciamento/editar_contato",
+                "equipe/gerenciamento/criar_contato",
+                "equipe/gerenciamento/criar_etiqueta",
+                "equipe/gerenciamento/criar_resposta_rapida"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Para supervisores",
+          "pages": [
+            {
+              "group": "Gestão funcionalidades",
+              "pages": [
+                "supervisores/funcionalidade/visao_geral",
+                "supervisores/funcionalidade/disparos",
+                "supervisores/funcionalidade/criar_funcoes",
+                "supervisores/funcionalidade/definir_permissoes"
+              ]
+            },
+            {
+              "group": "Gestão de usuários",
+              "pages": [
+                "supervisores/usuarios/criar_usuario",
+                "supervisores/usuarios/desativar_usuario",
+                "supervisores/usuarios/inserir_departamento",
+                "supervisores/usuarios/inserir_canais",
+                "supervisores/usuarios/aplicar_funcao",
+                "supervisores/usuarios/redefinir_senha"
               ]
             }
           ]
