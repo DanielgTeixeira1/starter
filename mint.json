@@ -91,6 +91,14 @@
                 "supervisores/usuarios/aplicar-funcao",
                 "supervisores/usuarios/redefinir-senha"
               ]
+            },
+            {
+              "group": "Gerenciar departamentos",
+              "pages": [
+                "supervisores/departamentos/criar-departamento",
+                "supervisores/departamentos/distribuicao",
+                "supervisores/departamentos/horario-atendimento"
+              ]
             }
           ]
         }
