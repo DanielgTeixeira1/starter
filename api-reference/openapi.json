@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/send-text": {
+    "/send-message": {
       "post": {
         "description": "Enviar mensagem para um contato no WhatsApp",
         "requestBody": {

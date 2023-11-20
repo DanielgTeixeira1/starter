@@ -111,7 +111,7 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/create",
+        "api-reference/endpoint/send-message",
         "api-reference/endpoint/send-document"
       ]
     }
