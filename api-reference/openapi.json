@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "OpenAPI Plant Store",
+    "title": "OpenAPI WhatsApp Mensage",
     "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
     "license": {
       "name": "MIT"
@@ -20,53 +20,14 @@
   ],
   "paths": {
     "/send-text": {
-      "get": {
-        "description": "Returns all plants from the system that the user has access to",
-        "parameters": [
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "The maximum number of results to return",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Plant"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      },
       "post": {
         "description": "Enviar mensagem para um contato no WhatsApp",
         "requestBody": {
-          "description": "Plant to add to the store",
+          "description": "Metódo para enviar uma mensagem para um número do WhatsApp pelo Sacflow",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlant"
+                "$ref": "#/components/schemas/Message"
               }
             }
           },
@@ -78,7 +39,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plant"
+                  "$ref": "#/components/schemas/NewMessage"
                 }
               }
             }
@@ -96,21 +57,16 @@
         }
       }
     },
-    "/plants/{id}": {
-      "delete": {
+    "/send-document": {
+      "post": {
         "description": "Deletes a single plant based on the ID supplied",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "ID of plant to delete",
-            "required": true,
+        "content": {
+          "application/json": {
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "$ref": "#/components/schemas/NewMessage"
             }
           }
-        ],
+        },
         "responses": {
           "204": {
             "description": "Plant deleted",
@@ -132,13 +88,13 @@
   },
   "components": {
     "schemas": {
-      "Plant": {
+      "Message": {
         "required": ["from", "accountId", "whatsappId", "message", "contact"],
         "type": "object",
         "properties": {
           "from": {
             "description": "The name of the plant",
-            "type": "string"
+            "ype": "string"
           },
           "accountId": {
             "description": "The name of the plant",
@@ -176,17 +132,15 @@
           }
         }
       },
-      "NewPlant": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/Plant"
-          },
-          {
-            "required": ["id"],
-            "type": "object",
-            "properties": {}
+      "NewMessage": {
+        "required": ["message"],
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "default": "message added to queue"
           }
-        ]
+        }
       },
       "Error": {
         "required": ["error", "message"],
