@@ -111,8 +111,9 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/send-message",
-        "api-reference/endpoint/send-document"
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
       ]
     }
   ],
