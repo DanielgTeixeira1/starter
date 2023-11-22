@@ -163,7 +163,7 @@
             "type": "string"
           },
           "messageTimeout": {
-            "description": "quanto tempo até ‘resolver automaticamente o atendimento por falta de resposta a essa mensagem específica",
+            "description": "quanto tempo até resolver automaticamente o atendimento por falta de resposta a essa mensagem específica",
             "type": "string"
           },
           "isPrivate": {
