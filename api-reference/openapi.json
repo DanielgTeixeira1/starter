@@ -62,7 +62,7 @@
       "post": {
         "description": "Creates a new plant in the store",
         "requestBody": {
-          "description": "Plant to add to the store",
+          "description": "Envia uma mensagem", 
           "content": {
             "application/json": {
               "schema": {
@@ -134,16 +134,52 @@
     "schemas": {
       "Plant": {
         "required": [
-          "name"
+          "from" , "accountId" , "whatsappId" , "message", "contact.name", "contact.phone" , "messageTimeout" , "isPrivate" , "queueId" , "tagId" , "queued"
         ],
         "type": "object",
         "properties": {
-          "name": {
-            "description": "The name of the plant",
+          "from": {
+            "description": "local de envio",
             "type": "string"
           },
-          "tag": {
-            "description": "Tag to specify the type",
+          "accountId": {
+            "description": "número da conta",
+            "type": "string"
+          },
+          "whatsappId": {
+            "description": "número de identificação único do contato",
+            "type": "string"
+          },
+          "message": {
+            "description": "mensagem que será enviada",
+            "type": "string"
+          },
+          "contact.name": {
+            "description": "nome do contato",
+            "type": "string"
+          },
+          "contact.phone": {
+            "description": "número de telefone do contato",
+            "type": "string"
+          },
+          "messageTimeout": {
+            "description": "quanto tempo até ‘resolver automaticamente o atendimento por falta de resposta a essa mensagem específica",
+            "type": "string"
+          },
+          "isPrivate": {
+            "description": "deve ser enviada no Sacflow como uma mensagem privada (não chegará para o cliente no WhatsApp)",
+            "type": "string"
+          },
+          "queueId": {
+            "description": "Id do departamento",
+            "type": "string"
+          },
+          "tagId": {
+            "description": "Id da etiqueta",
+            "type": "string"
+          },
+          "queued": {
+            "description": "Vai pra filar? Por padrão, sim!",
             "type": "string"
           }
         }
