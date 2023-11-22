@@ -111,7 +111,7 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
+        "api-reference/endpoint/post",
         "api-reference/endpoint/delete"
       ]
     }
