@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "hyerdev-39.mintlify.app"
+      "url": "http://sandbox.mintlify.com"
     }
   ],
   "security": [
