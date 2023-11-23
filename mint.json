@@ -25,9 +25,12 @@
     "name": "Dashboard",
     "url": "."
   },
+  "primaryTab": {
+    "name": "Documentação"
+},
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Referência de API",
       "url": "api-reference"
     }
   ],
@@ -105,11 +108,7 @@
       ]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
         "api-reference/endpoint/post"
       ]

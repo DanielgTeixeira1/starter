@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "http://sandbox.mintlify.com"
+      "url": "https://api.sacflow.io/api"
     }
   ],
   "security": [
@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/send-message": {
+    "/send-text": {
       "post": {
         "description": "Envia uma mensagem",
         "requestBody": {
@@ -34,6 +34,22 @@
           "required": true
         },
         "responses": {
+          "201": {
+            "description": "retorno bem sucedido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "message added to the queue"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "200": {
             "description": "retorno bem sucedido",
             "content": {
@@ -44,6 +60,10 @@
                     "message": {
                       "type": "string",
                       "example": "message added to the queue"
+                    },
+                    "ticketId": {
+                      "type": "number",
+                      "example":508555
                     }
                   }
                 }
@@ -74,7 +94,7 @@
     "schemas": {
       "Message": {
         "required": [
-          "from" , "accountId" , "whatsappId" , "message", "contact.name", "contact.phone" , "messageTimeout" , "isPrivate" , "queueId" , "tagId" , "queued"
+          "from" , "accountId" , "whatsappId" , "message", "contact.name", "contact.phone"
         ],
         "type": "object",
         "properties": {
@@ -84,11 +104,11 @@
           },
           "accountId": {
             "description": "número da conta",
-            "type": "string"
+            "type": "number"
           },
           "whatsappId": {
             "description": "número de identificação único do contato",
-            "type": "string"
+            "type": "number"
           },
           "message": {
             "description": "mensagem que será enviada",
@@ -102,7 +122,7 @@
                 "type": "string"
               },
               "phone": {
-                "description": "número de telefone do contato",
+                "description": "número de telefone do contato no formato 55XX888889999",
                 "type": "string"
               }
             }
