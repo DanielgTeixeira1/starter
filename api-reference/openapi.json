@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/send-message": {
       "post": {
         "description": "Envia uma mensagem",
         "requestBody": {
@@ -27,7 +27,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlant"
+                "$ref": "#/components/schemas/Message"
               }
             }
           },
@@ -35,11 +35,17 @@
         },
         "responses": {
           "200": {
-            "description": "plant response",
+            "description": "retorno bem sucedido",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plant"
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "message added to the queue"
+                    }
+                  }
                 }
               }
             }
@@ -49,7 +55,13 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Erro ao mandar mensagem"
+                    }
+                  }
                 }
               }
             }
@@ -93,7 +105,7 @@
   },
   "components": {
     "schemas": {
-      "Plant": {
+      "Message": {
         "required": [
           "from" , "accountId" , "whatsappId" , "message", "contact.name", "contact.phone" , "messageTimeout" , "isPrivate" , "queueId" , "tagId" , "queued"
         ],
@@ -115,13 +127,18 @@
             "description": "mensagem que será enviada",
             "type": "string"
           },
-          "contact.name": {
-            "description": "nome do contato",
-            "type": "string"
-          },
-          "contact.phone": {
-            "description": "número de telefone do contato",
-            "type": "string"
+          "contact": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "nome do contato",
+                "type": "string"
+              },
+              "phone": {
+                "description": "número de telefone do contato",
+                "type": "string"
+              }
+            }
           },
           "messageTimeout": {
             "description": "quanto tempo até resolver automaticamente o atendimento por falta de resposta a essa mensagem específica",
@@ -148,7 +165,7 @@
       "NewPlant": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/Plant"
+            "$ref": "#/components/schemas/Message"
           },
           {
             "required": [
